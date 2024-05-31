@@ -24,6 +24,8 @@ const bridgeAddresses = {
     mantle: "0xc21e4ebd1d92036cb467b53fe3258f219d909eb9",
     rsk: "0xc21e4ebd1d92036cb467b53fe3258f219d909eb9",
     optimism: "0x8201c02d4ab2214471e8c3ad6475c8b0cd9f2d06",
+    taiko: "0x7bd616192fb2b364f9d29b2026165281a5f2ff2f",
+    blast: "0x01b4ce0d48ce91eb6bcaf5db33870c65d641b894"
 } as { [chain: string]: string };
 
 
@@ -176,9 +178,11 @@ const adapter: BridgeAdapter = {
     base: constructParams("base"),
     "polygon zkevm": constructParams("polygon_zkevm"),
     "zksync era": constructParams("era"),
-    // manta: constructParams("manta"),
+    manta: constructParams("manta"),
     mantle: constructParams("mantle"),
-    // rootstock: constructParams("rsk")
+    // rootstock: constructParams("rsk"),
+    taiko: constructParams("taiko"),
+    blast: constructParams("blast")
 };
 
 export default adapter;
