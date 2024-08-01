@@ -187,7 +187,7 @@ const handler = async (event: AWSLambda.APIGatewayEvent): Promise<IResponse> => 
   const timestamp = event.pathParameters?.timestamp;
   if(Number(timestamp) % 3600 !== 0){
     return errorResponse({
-      message: "timestamp must be divible by 3600"
+      message: "timestamp must be divisible by 3600"
     })
   }
   const chain = event.pathParameters?.chain?.toLowerCase() ?? "";
