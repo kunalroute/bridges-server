@@ -16,7 +16,7 @@ token:  string,
 isDeposit:  boolean 
 amount: BigNumber 
 ```
-If your bridge is on 2 chains you can create adapter for 1 chain and track both deposits and withdrawals
+If your bridge is on 2 chains you can create an adapter for 1 chain and track both deposits and withdrawals
 ```ts
 const  adapter: BridgeAdapter = {
 ethereum:  constructParams("ethereum"),
@@ -51,7 +51,7 @@ mapTokens?: { [token: string]: string }; // can expand to map other keys if need
 getTokenFromReceipt?: {
 token: boolean;
 amount?: boolean;
-native?: string; // if provided native token address, will return amount of native token transferred if there are no ercs transferred
+native?: string; // if provided native token address, will return the amount of native token transferred if there are no ercs transferred
 };
 ```
 
