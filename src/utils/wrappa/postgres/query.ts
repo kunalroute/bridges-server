@@ -66,7 +66,7 @@ const getConfigsWithDestChain = async () => {
 };
 
 const queryConfig = async (bridgeNetworkName?: string, chain?: string, destinationChain?: string) => {
-  // this isn't written propery; can either query by bridgeNetworkName, or a combination of chain/destChain.
+  // this isn't written properly; can either query by bridgeNetworkName, or a combination of chain/destChain.
   let bridgeNetworkNameEqual = sql``;
   if (!(chain || destinationChain)) {
     if (bridgeNetworkName) {
